@@ -1,0 +1,33 @@
+@import url(/styles/imports/variables.css);
+
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    border-bottom: var(--standard-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+        margin-right: 1rem;
+    }
+    & button {
+        border: none;
+        background-color: var(--color-primary);
+        padding: 0.5rem;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+}
+
+.header-circle {
+    background-color: var(--color-black);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
