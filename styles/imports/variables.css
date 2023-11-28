@@ -1,0 +1,18 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Noto+Color+Emoji&family=Noto+Sans+JP&display=swap');
+
+
+:root {
+    --color-primary: #ffd700;
+    --color-secondary: #FFB3DB;
+    --color-tertiary: #6eeb83;
+    --color-background: #e3f2fd;
+    --color-text: #153593;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --standard-border: 6px solid var(--color-black);
+
+    --font-family-headers: 'Antonio', sans-serif;
+}
