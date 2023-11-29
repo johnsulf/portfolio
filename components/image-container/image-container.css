@@ -5,14 +5,23 @@
     justify-content: center;
     align-items: start;
     padding-top: 1rem;
+}
+
+.image-container__image {
+    position: relative;
 
     & img {
         max-height: 30rem;
-        width: 50%;
+        width: 100%;
         object-fit: contain;
-        cursor: pointer;
-        transform: scale(1);
     }
+}
+
+#thug {
+    position: absolute;
+    top: 25%;
+    left: -9%;
+    cursor: pointer;
 }
 
 .image-container__circle {
@@ -28,33 +37,50 @@
 
 @keyframes goMan {
     0% {
-      filter:  hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-primary));
-      transform: scale(0.98);
+      filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-primary));
     }
     100% {
         filter:  hue-rotate(-45deg) drop-shadow(32px 32px 40px var(--color-secondary2));
-        transform: scale(1);
     }
 }
 
 @keyframes goWoman {
     0% {
-      filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
-      transform: scale(0.98);
+      filter:  hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
     }
     100% {
         filter:  hue-rotate(45deg) drop-shadow(32px 32px 40px var(--color-primary));
-        transform: scale(1);
+    }
+}
+
+@keyframes thugLife {
+    0% {
+      top: -100%;
+    }
+    100% {
+        top: 25%;
+    }
+}
+
+@keyframes thugging {
+    0% {
+      top: 25%;
+    }
+    10%, 90% {
+        top: 35%;
+    }
+    100% {
+        top: 25%;
     }
 }
 
 @media screen and (min-width: 700px) {
     .content__image-container {    
         border-left: var(--standard-border);
+    }
 
-        & img {
-            width: 70%;
-        }
+    .image-container__image {
+        width: 70%;
     }
 }
 
