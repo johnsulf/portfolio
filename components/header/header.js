@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <nav>
                             <ul>
                                 <li>
+                                    <button>home</button>
+                                </li>
+                                <li>
                                     <button>about</button>
                                 </li>
                                 <li>
