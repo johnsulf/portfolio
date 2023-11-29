@@ -1,5 +1,6 @@
 
 @import url(/styles/imports/variables.css);
+@import url(/styles/imports/constants.css);
 
 @import url(/components/header/header.css);
 @import url(/components/image-container/image-container.css);
@@ -19,12 +20,21 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .content {
     position: relative;
     display: flex;
-    height: 100%;
-    min-height: 90svh;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .content {
+        flex-direction: row;
+    }
 }

@@ -1,19 +1,17 @@
 .content__image-container {
     flex: 3;
-    background-color: var(--color-secondary);
-    border-left: var(--standard-border);
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: start;
+    padding-top: 1rem;
 
     & img {
         max-height: 30rem;
-        width: 80%;
+        width: 50%;
         object-fit: contain;
         cursor: pointer;
-        filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
         transform: scale(1);
-        animation: goMan 4s ease-in-out 1;
     }
 }
 
@@ -24,18 +22,39 @@
     width: 8rem;
     height: 8rem;
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     left: -4.5rem
 }
 
 @keyframes goMan {
     0% {
-      filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
-      transform: scale(0.01);
+      filter:  hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-primary));
+      transform: scale(0.98);
     }
     100% {
         filter:  hue-rotate(-45deg) drop-shadow(32px 32px 40px var(--color-secondary2));
         transform: scale(1);
+    }
+}
+
+@keyframes goWoman {
+    0% {
+      filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
+      transform: scale(0.98);
+    }
+    100% {
+        filter:  hue-rotate(45deg) drop-shadow(32px 32px 40px var(--color-primary));
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .content__image-container {    
+        border-left: var(--standard-border);
+
+        & img {
+            width: 70%;
+        }
     }
 }
 

@@ -10,25 +10,35 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <header>
+        <div class="header-circle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <button id="aboutBtn">about</button>
+                </li>
+                <li>
+                    <button id="projectsBtn">projects</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="content">
             <div class="content__main">
-                <div class="main-header">
-                    <h1>projects</h1>
-                </div>
+                <div class="main-header"></div>
                 <div class="main-content"></div>
             </div>
             <div class="content__image-container">
                 <div class="image-container__circle" id="circleBtn"></div>
-                <img src="assets/images/portrait.png" alt="" srcset="">
+                <img src="" alt="" srcset="">
             </div>
         </section>
     </main>
     <footer id="footer"></footer>
 
+    <script type="module" src="js/helpers/eventListeners.js"></script>
     <script type="module" src="js/index.js"></script>
-    <script type=" module" src="components/header/header.js"></script>
 </body>
 
 </html>

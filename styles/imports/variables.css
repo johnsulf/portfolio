@@ -7,13 +7,23 @@
     --color-secondary: #FFB3DB;
     --color-secondary2: #DC0073;
     --color-tertiary: #6eeb83;
-    --color-background: #e3f2fd;
-    --color-text: #153593;
+    --color-accent: #e3f2fd;
+    --color-dark: #153593;
 
+    --color-rainydays: #183540;
+    --color-puttinglab: #7FDBFF;
+    
     --color-white: #fff;
     --color-black: #000;
 
     --standard-border: 6px solid var(--color-black);
 
     --font-family-headers: 'Antonio', sans-serif;
+
+    --filter-16-pri: hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-primary));
+    --filter-32-pri: hue-rotate(45deg) drop-shadow(32px 32px 40px var(--color-primary));
+
+    --filter-16-sec2: hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
+    --filter-32-sec2: hue-rotate(-45deg) drop-shadow(32px 32px 40px var(--color-secondary2));
+
 }
