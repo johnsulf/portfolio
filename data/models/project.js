@@ -2,16 +2,22 @@ export class Project {
     constructor({
         id,
         title,
+        webURL,
         subtitle,
         img,
+        color,
+        textColor,
         grade,
-        githubLink,
+        githubURL,
     }) {
         this.id = id;
         this.title = title;
+        this.webURL = webURL;
         this.subtitle = subtitle;
         this.img = img;
+        this.color = color;
+        this.textColor = textColor;
         this.grade = grade;
-        this.githubLink = githubLink;
+        this.githubURL = githubURL;
     }
 }

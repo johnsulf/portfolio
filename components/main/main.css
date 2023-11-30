@@ -10,6 +10,8 @@
     border-bottom: var(--standard-border);
     display: flex;
     align-items: center;
+    transition: all 1s;
+
     & h1 {
         padding-left: 1.5rem;
     }
@@ -19,9 +21,17 @@
     background-color: var(--color-white);
     padding: 6px;
     display: flex;
-    gap: 6px;
     overflow-x: scroll;
+    gap: 6px;
     border-bottom: var(--standard-border);
+}
+
+.main-content__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .main-content__card {
@@ -32,29 +42,68 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
     scroll-snap-type: both mandatory;
 
-    & img {
-        width: 100%;
-        height: 70%;
-        object-fit: contain;
-    }
+        & .card__header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-    & a {
-        color: var(--color-white);
-        background-color: var(--color-black);
-        padding: .5rem 1rem;
-        cursor: pointer;
-    }
-}
+            & a {
+                padding: .25rem;  
 
-#card-0 { 
-    background-color: var(--color-rainydays);
-    color: var(--color-white);
+                & h2 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            & a:hover {
+                box-shadow: 1px 1px 64px var(--color-white);
+            }
+        }
+
+        & img {
+            width: 100%;
+            max-height: 50%;
+            object-fit: contain;
+        }
+
+        & a {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            border-radius: 4px;
+            transition: all 300ms;
+        }
+
+        & .card__github-btn { 
+            width: 30%;
+            height: 2rem;
+            background-color: var(--color-white);
+
+            & :first-child {
+                flex: 2;
+            }
+
+            & :last-child {
+                flex: 1;
+                height: 12px;
+                width: 12px;
+            }
+        }
+
+        & .card__github-btn:hover {
+            background-color: var(--color-black);
+
+            & img {
+                filter: invert(100%);
+            }
+        }
 }
-#card-1 { background-color: var(--color-primary); }
-#card-2 { background-color: var(--color-puttinglab); }
 
 @media screen and (min-width: 700px) {
     .main-header {
@@ -65,10 +114,15 @@
         height: 30rem;
         flex-wrap: wrap;
         border-bottom: none;
+        overflow-x: visible;
         overflow-y: scroll;
     }
 
     .main-content__card {
         height: 93%;
+
+        & .card__header a h2 {
+            font-size: 2rem;
+        }
     }
 }

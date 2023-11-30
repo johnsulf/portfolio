@@ -17,3 +17,4 @@
 
 .text-white { color: var(--color-white); }
 .text-black { color: var(--color-black); }
+.text-dark { color: var(--color-dark); }
