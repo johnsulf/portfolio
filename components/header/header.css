@@ -1,9 +1,8 @@
 @import url(/styles/imports/variables.css);
 
-header {
+.header {
     height: 5rem;
     width: 100%;
-    background-color: var(--color-primary);
     border-bottom: var(--standard-border);
     display: flex;
     align-items: center;
@@ -41,4 +40,8 @@ header {
     width: 40px;
     border-radius: 50%;
     margin-left: 2rem;
+}
+
+header {
+    background-color: var(--color-primary);
 }

@@ -4,6 +4,7 @@
 
 :root {
     --color-primary: #ffd700;
+    --color-primary-opacity: #ffd90060;
     --color-secondary: #FFB3DB;
     --color-secondary2: #DC0073;
     --color-tertiary: #6eeb83;
@@ -12,6 +13,7 @@
 
     --color-rainydays: #183540;
     --color-puttinglab: #7FDBFF;
+    --color-pokemon: #3c5aa6;
     
     --color-white: #fff;
     --color-black: #000;

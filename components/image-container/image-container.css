@@ -6,14 +6,26 @@
     align-items: start;
     padding-top: 1rem;
     transition: all 800ms;
+
+    &.bg-tertiary {
+        align-items: center;
+        min-height: 12rem;
+
+        & img {
+            width: 100%;
+            max-width: 12rem;
+        }
+    }
 }
 
 .image-container__image {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     & img {
-        max-height: 30rem;
-        width: 100%;
+        width: 50%;
         object-fit: contain;
     }
 }
@@ -21,7 +33,7 @@
 #thug {
     position: absolute;
     top: 25%;
-    left: -9%;
+    left: 20%;
     cursor: pointer;
 }
 
@@ -36,7 +48,7 @@
     left: -4.5rem
 }
 
-@keyframes goMan {
+@keyframes erlendImgAnimation {
     0% {
       filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-primary));
     }
@@ -45,7 +57,7 @@
     }
 }
 
-@keyframes goWoman {
+@keyframes macbookImgAnimation {
     0% {
       filter:  hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
     }
@@ -56,7 +68,7 @@
 
 @keyframes thugLife {
     0% {
-      top: -100%;
+      top: -300%;
     }
     100% {
         top: 25%;
@@ -78,10 +90,31 @@
 @media screen and (min-width: 700px) {
     .content__image-container {    
         border-left: var(--standard-border);
+
+        &.bg-tertiary img {
+                max-width: 30rem;
+            }
     }
 
     .image-container__image {
         width: 70%;
+
+        & img {
+            width: 80%;
+        }
+    }
+
+    #thug {
+        left: 2%;
+    }
+
+    @keyframes thugLife {
+        0% {
+          top: -100%;
+        }
+        100% {
+            top: 25%;
+        }
     }
 }
 
