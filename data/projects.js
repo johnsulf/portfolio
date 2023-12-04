@@ -9,7 +9,6 @@ export const projects = [
         img: '/assets/images/puttinglab.jpg',
         color: 'var(--color-puttinglab)',
         textColor: 'var(--color-black)',
-        grade: 'Not graded',
         githubURL: 'https://github.com/johnsulf/project-exam-1-johnsulf',
     },),
     new Project({
@@ -20,18 +19,16 @@ export const projects = [
         img: '/assets/images/csmuseum.jpg',
         color: 'var(--color-primary)',
         textColor: 'var(--color-black)',
-        grade: 'A',
         githubURL: 'https://github.com/johnsulf/sp1',
     },),
     new Project({
         id: 2,
-        title: 'RainyDays', 
+        title: 'RainyDays',
         subtitle: 'Cross-course Project (Design, HTML & CSS, Interactive Design)',
         webURL: 'https://rainydaysej.netlify.app',
         img: '/assets/images/rainydays.jpg',
         color: 'var(--color-rainydays)',
         textColor: 'var(--color-white)',
-        grade: 'A',
         githubURL: 'https://github.com/johnsulf/rainydays',
     },),
 ]

@@ -7,7 +7,6 @@ export class Project {
         img,
         color,
         textColor,
-        grade,
         githubURL,
     }) {
         this.id = id;
@@ -17,7 +16,6 @@ export class Project {
         this.img = img;
         this.color = color;
         this.textColor = textColor;
-        this.grade = grade;
         this.githubURL = githubURL;
     }
 }
