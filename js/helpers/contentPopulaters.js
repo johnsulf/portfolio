@@ -30,7 +30,6 @@ export function populateMainContent() {
             } else {
                 displayProjectCards(privateProjects);
             }
-
             break;
 
         default:

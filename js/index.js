@@ -73,7 +73,7 @@ export function setSubView(subView) {
             schoolBtn.classList.remove("active");
             privateBtn.classList.add("active");
     }
-    populateMainContent()
+    populateMainContent();
 }
 
 function setContent(

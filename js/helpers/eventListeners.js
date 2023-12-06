@@ -17,10 +17,8 @@ projectsBtn.addEventListener('click', () => {
     });
     privateBtn.addEventListener('click', () => {
         setSubView('private');
-    })
+    });
 },);
-
-
 
 thug.addEventListener('click', () => {
     thug.style.animation = "thugging 2s linear 1";
