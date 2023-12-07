@@ -24,6 +24,10 @@ h1 { font-size: 3.5rem; }
 h2 { font-size: 3rem; }
 h3 { font-size: 2rem; }
 
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .content {
     position: relative;
     display: flex;

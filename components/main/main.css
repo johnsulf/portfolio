@@ -3,6 +3,7 @@
 .main-header__filter-buttons,
 .main-content,
 .main-content__about,
+.about__showcase,
 .main-content__card,
 .card__header,
 .main-content__card a {
@@ -11,25 +12,25 @@
 
 .content__main,
 .main-header,
-.main-content__about,
 .main-content__card,
+.main-content__about,
 .card__header {
     flex-direction: column;
 }
 
-.main-header,
 .main-content__about,
+.main-header,
 .card__header {
     justify-content: center;
 }
 
-.main-content__about,
 .main-content__card,
 .card__header,
 .main-content__card a {
     align-items: center;
 }
 
+.about__showcase,
 .main-content__card,
 .main-content__card a {
     justify-content: space-between;
@@ -95,7 +96,48 @@
 }
 
 .main-content__about {
-    padding: 2rem;
+    padding: 1rem;
+}
+
+.about__about > * {
+    margin-bottom: 4px;
+}
+
+.about__header {
+    font-size: 2.5rem;
+}
+
+.about__sub-header {
+    font-size: 1rem;
+}
+
+.about__paragraph {
+    font-size: .75rem;
+}
+
+.about__showcase {
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.showcase {
+    flex: 1;
+}
+
+.showcase__paragraph {
+    font-size: .5rem;
+}
+
+.about__media-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.about__media-links img {
+    width: 1rem;
+    object-fit: contain;
 }
 
 .main-content__card {
@@ -173,6 +215,22 @@
 
     .main-content__about {
         padding: 0;
+    }
+
+    .about__header {
+        font-size: 3rem;
+    }
+
+    .about__sub-header {
+        font-size: 1.5rem;
+    }
+
+    .about__paragraph {
+        font-size: 1rem;
+    }
+
+    .showcase__paragraph {
+        font-size: .75rem;
     }
 
     .main-content__card {

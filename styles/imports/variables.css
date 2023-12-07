@@ -8,7 +8,8 @@
     --color-secondary2: #DC0073;
     --color-tertiary: #6eeb83;
     --color-accent: #e3f2fd;
-    --color-dark: #153593;
+    --color-contrast: #0076fd;
+    --color-contrast2: #DC0073;
 
 
     --color-dgputt: #ffd700;
@@ -37,7 +38,6 @@
   --color-primary: #2e2700;
   --color-text: #fff;
   --color-background: #1a1a1a;
-  --color-dark: #fff;
   --color-secondary: #32242b;
   --color-secondary2: #230012;
   --color-tertiary: #0f2112;

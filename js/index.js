@@ -4,10 +4,13 @@ import { getAndSetTheme, getAndSetView } from "./helpers/globalVariables.js";
 import { addThugListener } from "./helpers/thug.js";
 import { addThemeTogglerListener } from "./toggleTheme.js";
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     getAndSetTheme();
     getAndSetView();
     addViewButtonsListener();
-    addThugListener();
     addThemeTogglerListener();
+});
+
+window.addEventListener("load", () => {
+    addThugListener();
 });
