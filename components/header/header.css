@@ -1,17 +1,29 @@
 @import url(/styles/imports/variables.css);
 
+header, 
+header ul {
+    display: flex;
+}
+
+header,
+header button {
+    background-color: var(--color-primary);
+}
+
+header button:hover, 
+.theme-toggler {
+    background-color: var(--color-text);
+}
+
 header {
     height: 5rem;
     width: 100%;
     border-bottom: var(--standard-border);
-    background-color: var(--color-primary);
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header ul {
-    display: flex;
     list-style: none;
     gap: 0.5rem;
     margin-right: 1rem;
@@ -19,7 +31,6 @@ header ul {
 
 header button {
     border: none;
-    background-color: var(--color-primary);
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 1rem;
@@ -29,7 +40,6 @@ header button {
 }
 
 header button:hover {
-    background-color: var(--color-text);
     color: var(--color-primary);
 }
 
@@ -39,7 +49,6 @@ header button:hover {
 }
 
 .theme-toggler {
-    background-color: var(--color-text);
     height: 40px;
     width: 40px;
     border-radius: 50%;

@@ -1,28 +1,29 @@
+.content__image-container,
+.image-container__image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.image-container__image,
+.content__image-container.bg-tertiary {
+    align-items: center;
+}
+
 .content__image-container {
     flex: 3;
-    position: relative;
-    display: flex;
-    justify-content: center;
     align-items: start;
     padding-top: 1rem;
     transition: all 800ms;
 }
 
 .content__image-container.bg-tertiary {
-    align-items: center;
     min-height: 12rem;
 }
 
 .content__image-container.bg-tertiary img {
     width: 100%;
     max-width: 12rem;
-}
-
-.image-container__image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .image-container__image img {

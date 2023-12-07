@@ -47,6 +47,17 @@ export const projects = [
     },),
     new Project({
         id: 5,
+        dataGroup: 'school',
+        title: 'Portfolio',
+        webURL: 'https://erlendjohnsen.com',
+        subtitle: 'Portfolio 1',
+        img: '/assets/images/portfolio.jpg',
+        color: 'var(--color-portfolio)',
+        textColor: 'var(--color-black)',
+        githubURL: 'https://github.com/johnsulf/portfolio',
+    },),
+    new Project({
+        id: 6,
         dataGroup: 'private',
         title: 'dgputt',
         webURL: 'https://apps.apple.com/no/app/dgputt/id1536711552',
@@ -57,7 +68,7 @@ export const projects = [
         githubURL: 'https://github.com/johnsulf/dgputt/',
     },),
     new Project({
-        id: 6,
+        id: 7,
         dataGroup: 'private',
         title: 'dgputt.app',
         webURL: 'https://dgputt.app',
