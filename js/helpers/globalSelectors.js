@@ -1,4 +1,5 @@
 
+export const body = document.querySelector("body");
 
 export const mainContent = document.querySelector('.main-content');
 

@@ -8,17 +8,14 @@ import {
 
 import {
     removeAndAddClass,
-    setActiveButton,
+    changeActiveButton,
     startViewTransitionOrNot,
     filterProjects
 } from "../helpers/genHelpers.js";
 
-import {
-    projectFilter,
-    modifyProjectFilter
-} from "../helpers/globalVariables.js";
+import { modifyProjectFilter } from "../helpers/globalVariables.js";
 
-import { projects } from "../../data/projects.js";
+import { projects } from "../data/projects.js";
 
 export function projectsContent() {
 
@@ -48,8 +45,7 @@ export function projectsContent() {
         button.addEventListener("click", (e) => {
             const filter = e.currentTarget.getAttribute("data-filter");
             modifyProjectFilter(filter);
-            console.log("Project filter: " + projectFilter);
-            setActiveButton(e.currentTarget, filterButtonsContainer);
+            changeActiveButton(e.currentTarget, filterButtonsContainer);
             startViewTransitionOrNot(filterProjects, filter, projects);
         });
     });

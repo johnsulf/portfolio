@@ -38,7 +38,7 @@
 }
 
 .image-container__circle {
-    background-color: var(--color-primary);
+    background-color: var(--color-circle);
     border: var(--standard-border);
     border-radius: 50%;
     width: 8rem;
@@ -46,24 +46,6 @@
     position: absolute;
     top: 4rem;
     left: -4.5rem
-}
-
-@keyframes erlendImgAnimation {
-    0% {
-      filter:  hue-rotate(-45deg) drop-shadow(16px 16px 40px var(--color-primary));
-    }
-    100% {
-        filter:  hue-rotate(-45deg) drop-shadow(32px 32px 40px var(--color-secondary2));
-    }
-}
-
-@keyframes macbookImgAnimation {
-    0% {
-      filter:  hue-rotate(45deg) drop-shadow(16px 16px 40px var(--color-secondary2));
-    }
-    100% {
-        filter:  hue-rotate(45deg) drop-shadow(32px 32px 40px var(--color-primary));
-    }
 }
 
 @keyframes thugLife {

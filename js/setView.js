@@ -7,25 +7,34 @@ import {
 } from "./helpers/globalVariables.js";
 
 import {
-    setActiveButton,
-    startViewTransitionOrNot
+    startViewTransitionOrNot,
+    changeActiveButton
 } from "./helpers/genHelpers.js";
 
-export function setView(viewToSet) {
-    modifyView(viewToSet);
+const viewButtonsContainer = document.querySelector(".header__view-buttons");
+const viewButtons = document.querySelectorAll(".view-button");
+
+export function setView() {
     populateContent();
+    setActiveButton();
 }
 
-export function viewButtonsListener() {
-    const viewButtonsContainer = document.querySelector(".header__view-buttons");
-    const viewButtons = document.querySelectorAll(".view-button");
+function setActiveButton() {
+    viewButtons.forEach((button) => {
+        let buttonView = button.getAttribute("view");
+        if (view === buttonView) {
+            button.classList.add("active");
+        }
+    });
+}
+
+export function addViewButtonsListener() {
 
     viewButtons.forEach((button) => {
         button.addEventListener("click", (e) => {
             const newView = e.currentTarget.getAttribute("view");
             modifyView(newView);
-            console.log("View: " + view);
-            setActiveButton(e.currentTarget, viewButtonsContainer);
+            changeActiveButton(e.currentTarget, viewButtonsContainer);
             startViewTransitionOrNot(setView, view);
         });
     });

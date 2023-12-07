@@ -25,7 +25,10 @@ export function startViewTransitionOrNot(func, arg1 = "", arg2 = "") {
     }
 }
 
-export function setActiveButton(newActive, oldActive) {
-    oldActive.querySelector(".active").classList.remove("active");
+export function changeActiveButton(newActive, oldActive) {
+    if (!oldActive.querySelector(".active")) { } else {
+        oldActive.querySelector(".active").classList.remove("active");
+    }
     newActive.classList.add("active");
 }
+
