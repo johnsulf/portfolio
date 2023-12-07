@@ -17,6 +17,7 @@ body {
     border: var(--standard-border);
     position: relative;
     font-family: var(--font-family-headers);
+    color: var(--color-text);
 }
 
 h1 { font-size: 3.5rem; }

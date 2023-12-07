@@ -1,6 +1,7 @@
 export class Project {
     constructor({
         id,
+        dataGroup,
         title,
         webURL,
         subtitle,
@@ -10,6 +11,7 @@ export class Project {
         githubURL,
     }) {
         this.id = id;
+        this.dataGroup = dataGroup;
         this.title = title;
         this.webURL = webURL;
         this.subtitle = subtitle;

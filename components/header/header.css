@@ -1,48 +1,52 @@
 @import url(/styles/imports/variables.css);
 
-.header {
+header {
     height: 5rem;
     width: 100%;
     border-bottom: var(--standard-border);
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header ul {
+header ul {
     display: flex;
     list-style: none;
     gap: 0.5rem;
     margin-right: 1rem;
 }
 
-.header button {
+header button {
     border: none;
     background-color: var(--color-primary);
     padding: 0.5rem;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
-    color: var(--color-black);
+    color: var(--color-text);
     transition: all 300ms;
 }
-.header button:hover {
-    background-color: var(--color-black);
+
+header button:hover {
+    background-color: var(--color-text);
     color: var(--color-primary);
 }
 
-.active {
+.view-button.active {
     text-decoration: underline;
+    pointer-events: none;
 }
 
-.header-circle {
-    background-color: var(--color-black);
+.theme-toggler {
+    background-color: var(--color-text);
     height: 40px;
     width: 40px;
     border-radius: 50%;
     margin-left: 2rem;
+    cursor: pointer;
 }
 
-header {
-    background-color: var(--color-primary);
+.theme-toggler:hover {
+    box-shadow: 0 0 16px var(--color-text);
 }

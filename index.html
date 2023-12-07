@@ -10,17 +10,17 @@
     <title>Erlend Johnsen | Portfolio</title>
 </head>
 
-<body>
+<body class="light">
 
     <header class="header">
-        <div class="header-circle"></div>
+        <div class="theme-toggler"></div>
         <nav>
-            <ul>
+            <ul class="header__view-buttons">
                 <li>
-                    <button id="aboutBtn">about</button>
+                    <button class="view-button active" view="about">about</button>
                 </li>
                 <li>
-                    <button id="projectsBtn">projects</button>
+                    <button class="view-button" view="projects">projects</button>
                 </li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@
     <main>
         <section class="content">
             <div class="content__main">
-                <div class="main-header header"></div>
+                <div class="main-header"></div>
                 <div class="main-content"></div>
             </div>
             <div class="content__image-container">
@@ -42,7 +42,6 @@
         </section>
     </main>
 
-    <script type="module" src="js/helpers/eventListeners.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
 

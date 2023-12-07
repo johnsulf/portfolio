@@ -6,30 +6,53 @@
 }
 
 .main-header {
-    height: 6rem;
-    border-bottom: var(--standard-border);
+    height: 8rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: var(--standard-border);
     transition: all 1s;
 }
 
-.main-header h1 {
+.main-header h1,
+.main-header__filter-buttons {
     padding-left: 1.5rem;
 }
 
-.main-header__nav {
-    margin-right: 1rem;
+.main-header__filter-buttons {
+    margin-top: .25rem;
+    display: flex;
+    gap: 4px;
+}
+
+.filter-button {
+    padding: 4px 12px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-button.active {
+    pointer-events: none;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    box-shadow: 0 0 2px var(--color-black);
+}
+
+.filter-button:hover {
+    background-color: #d3d3d3;
 }
 
 .main-content {
-    background-color: var(--color-white);
+    background-color: var(--color-background);
     padding: 6px;
     display: flex;
     overflow-x: scroll;
     gap: 6px;
     border-bottom: var(--standard-border);
 }
-
 
 .main-content__about {
     display: flex;
@@ -112,6 +135,16 @@
 .card__github-btn:hover img {
     filter: invert(100%);
 }
+
+.hidden {
+    display: none;
+}
+
+/* ::view-transition-group(root) { }
+
+::view-transition-old(root) { }
+
+::view-transition-new(root) { } */
 
 @media screen and (min-width: 700px) {
     .main-header {
