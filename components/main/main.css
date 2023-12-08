@@ -130,7 +130,7 @@
 
 .study-progress__progress {
     width: 90%;
-    height: 1rem;
+    height: 8px;
     max-width: 15rem;
     background-color: #f2f2f2;
     border-radius: 8px;
@@ -140,7 +140,7 @@
 }
 
 .progress__bar {
-    height: 1rem;
+    height: 100%;
     border-radius: 8px;
 }
 

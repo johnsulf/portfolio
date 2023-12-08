@@ -24,8 +24,8 @@ export function aboutContent() {
     mainContent.innerHTML =
         `<div class="main-content__about">
             <div class="about__about">
-                <h2 class="about__header">I'm <span class="text-contrast">Erlend</span></h2>
-                <h3 class="about__sub-header">A <span class="text-contrast2">{front-end}</span> developer from Norway</h3>
+                <h2 class="about__header">I'm <span class="text-contrast">Erlend</span> <span style="vertical-align: middle; font-size: 1.25rem; font-family: 'Courier New'">('ɛːɭɛn)</span></h2>
+                <h3 class="about__sub-header"><span class="text-contrast2">< { front-end } /></span> developer</h3>
                 <p class="about__paragraph">Passionate about crafting user-centric mobile apps and web solutions, I blend front-end expertise with practical experience.</p> 
             </div>
             <div class="about__showcase">
