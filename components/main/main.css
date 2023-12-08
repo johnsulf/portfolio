@@ -4,6 +4,7 @@
 .main-content,
 .main-content__about,
 .about__showcase,
+.about__study-progress,
 .main-content__card,
 .card__header,
 .main-content__card a {
@@ -14,22 +15,25 @@
 .main-header,
 .main-content__card,
 .main-content__about,
+.about__study-progress,
 .card__header {
     flex-direction: column;
 }
 
-.main-content__about,
 .main-header,
+.about__study-progress,
 .card__header {
     justify-content: center;
 }
 
+.about__study-progress,
 .main-content__card,
 .card__header,
 .main-content__card a {
     align-items: center;
 }
 
+.main-content__about,
 .about__showcase,
 .main-content__card,
 .main-content__card a {
@@ -93,6 +97,7 @@
 
 .main-content__about {
     padding: 1rem;
+    gap: 1rem;
 }
 
 .about__about > * {
@@ -104,16 +109,15 @@
 }
 
 .about__sub-header {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .about__paragraph {
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .about__showcase {
-    margin: 2rem 0;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .showcase {
@@ -121,11 +125,26 @@
 }
 
 .showcase__paragraph {
-    font-size: .5rem;
+    font-size: .75rem;
+}
+
+.study-progress__progress {
+    width: 90%;
+    height: 1rem;
+    max-width: 15rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1px var(--color-text);
+}
+
+.progress__bar {
+    height: 1rem;
+    border-radius: 8px;
 }
 
 .about__media-links {
-    margin-top: 1rem;
     display: flex;
     justify-content: left;
     gap: 1rem;
@@ -137,6 +156,11 @@
     padding: 8px;
     width: 1rem;
     object-fit: contain;
+    transition: all 300ms;
+}
+
+.about__media-links a img:hover {
+    filter: invert(100%);
 }
 
 .main-content__card {
@@ -191,6 +215,28 @@
 
 ::view-transition-new(root) { } */
 
+@keyframes growBar {
+    0% {
+        width: 0px;
+        background-color: var(--color-progress0);
+    }
+     50% {
+        background-color: var(--color-progress1);
+     }
+}
+
+@keyframes displayNumber {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (hover: hover) {
 
     .filter-button:hover {
@@ -234,11 +280,7 @@
         overflow-x: visible;
         overflow-y: scroll;
     }
-
-    .main-content__about {
-        padding: 0;
-    }
-
+    
     .about__header {
         font-size: 3rem;
     }
