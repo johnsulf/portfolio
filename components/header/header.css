@@ -10,11 +10,6 @@ header button {
     background-color: var(--color-primary);
 }
 
-header button:hover, 
-.theme-toggler {
-    background-color: var(--color-text);
-}
-
 header {
     height: 5rem;
     width: 100%;
@@ -39,10 +34,6 @@ header button {
     transition: all 300ms;
 }
 
-header button:hover {
-    color: var(--color-primary);
-}
-
 .view-button.active {
     text-decoration: underline;
     pointer-events: none;
@@ -56,6 +47,32 @@ header button:hover {
     cursor: pointer;
 }
 
-.theme-toggler:hover {
-    box-shadow: 0 0 16px var(--color-text);
+@media (hover: hover) {
+    .theme-toggler:hover {
+        box-shadow: 0 0 16px var(--color-text);
+    }
+
+    header button:hover {
+        color: var(--color-primary);
+    }
+
+    header button:hover, 
+    .theme-toggler {
+        background-color: var(--color-text);
+    }
+}
+
+@media (hover: none) {
+    .theme-toggler:active {
+        box-shadow: 0 0 16px var(--color-text);
+    }
+
+    header button:active {
+        color: var(--color-primary);
+    }
+
+    header button:active, 
+    .theme-toggler {
+        background-color: var(--color-text);
+    }
 }
