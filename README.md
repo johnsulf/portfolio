@@ -1,19 +1,22 @@
-# Rainydays - Cross Course Project
+# Portfolio 1
 
 ![image](https://erlendjohnsen.com/assets/images/portfolio.jpg)
 
-A simple overview of the use/purpose of the project.
-
 ## Description
-
-The Rainydays site has been built as a result of several subjects in my studies at Noroff. A prototype in Figma was first made in the Design course. Then, the HTML & CSS course brought the site to the web as a static web page. In the Interaction Design Course, improvements were made to the page, and some JavaScript was added. And finally, in the Content Management Systems Course, the page was linked up with WordPress through the REST API as a headless CMS for hosting products. Visit the site [here](https://raindydaysej.netlify.app/)
+My Portfolio was a lot of fun designing and bringing to the web. It has some nice features, like it's a single page and dark mode/light mode. It hopefully displays me as a front-end developer with a set of skills, as well as a twinke in the eye and a portion of humor. See the key features for more details. 
+Visit the site [here](https://erlendjohnsen.com/)
 
 ### Key features
 
-- Popular products: A popular products section is featured on the home page.
-- Filtering products: Jackets can be filtered based on Color, Size and Review
-- Search: The header provides search functionality
-- Shopping cart: The shopping cart uses local storage to store products added to the cart
+- Single Page Site: This project has only one HTML file. Navigating between views is handled with JavaScript.
+- Dark mode: The lights can be turned off from the circle in the header.
+- Fresh design: I wanted to create something different that stands out from other portfolios.
+- startViewTransition: A new experimental JavaScript method for smooth transitions. Browser support is good, otherwise, thats handled as well.
+- Local storage: Both dark mode and active view are stored in local storage.
+- Dynamic study progress: The study progress on the about view will change over time.
+- Filtering projects: Projects can be filtered on all, school and private.
+- Fun stuff: Thuggable thug sunglasses coming from the sky is fun!
+- Responsive design: The website will look good on mobile and desktop.
 
 ## Built With
 
@@ -22,7 +25,6 @@ This project is crafted using:
 - HTML
 - CSS
 - Vanilla JavaScript
-- WordPress REST API
 
 No external frameworks or libraries are used, emphasizing core web development skills.
 
@@ -33,7 +35,7 @@ No external frameworks or libraries are used, emphasizing core web development s
 1. Clone the repo:
 Open a command window and navigate to destination you want to save the project to. Then run:
 ```bash
-git clone https://github.com/johnsulf/rainydays-johnsulf.git
+git clone https://github.com/johnsulf/portfolio.git
 ```
 
 ### Running
@@ -62,7 +64,7 @@ git push origin my-new-feature
 
 ## Contact
 
-Any questions about this project? [Send me an email!](mailto:erlendjohns@gmail.com?subject=Rainydays%20repo%20inquiry&body=Hi%20Erlend,%0A%0A)
+Any questions about this project? [Send me an email!](mailto:erlendjohns@gmail.com?subject=Portfolio%20repo%20inquiry&body=Hi%20Erlend,%0A%0A)
 
 ## Social Media
 
