@@ -2,9 +2,9 @@
 @import url(/styles/imports/variables.css);
 @import url(/styles/imports/constants.css);
 
-@import url(/components/header/header.css);
-@import url(/components/image-container/image-container.css);
-@import url(/components/main/main.css);
+@import url(/styles/components/header.css);
+@import url(/styles/components/image-container.css);
+@import url(/styles/components/main.css);
 
 * {
     margin: 0;
